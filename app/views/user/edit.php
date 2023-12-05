@@ -18,26 +18,22 @@
     </div>
     <!-- /.card-header -->
     <!-- form start -->
-          <form role="form" action="<?= base_url; ?>/user/updateUser" method="POST" 
-              enctype="multipart/form-data">
+          <form role="form" action="<?= base_url; ?>/user/updateUser" method="POST" enctype="multipart/form-data">
                   <input type="hidden" name="id" value="<?= $data['user']['id']; ?>">
                   <div class="card-body">
                     <div class="form-group">
                        <label >Nama</label>
-                 <input type="text" class="form-control" placeholder="masukkan nama..." 
-               name="nama" value="<?= $data['user']['nama']; ?>" autofocus>
+                 <input type="text" class="form-control" placeholder="masukkan nama..." name="nama" value="<?= $data['user']['nama']; ?>" autofocus>
                </div>
             <div class="form-group">
           <label >Username</label>
-        <input type="text" class="form-control" placeholder="masukkan username..." 
-              name="username" value="<?= $data['user']['username']; ?>" readonly>
+        <input type="text" class="form-control" placeholder="masukkan username..." name="username" value="<?= $data['user']['username']; ?>" readonly>
         </div>
            <blockquote class="quote-warning">Abaikan jika tidak ingin mengganti password.
       </blockquote>
            <div class="form-group">
        <label >Password</label>
-      <input type="password" class="form-control" placeholder="masukkan 
-            password..." name="password">
+      <input type="password" class="form-control" placeholder="masukkan password..." name="password">
               </div>
                  <div class="form-group">
                     <label >Ulangi Password</label>

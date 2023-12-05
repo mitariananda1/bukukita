@@ -3,10 +3,10 @@ class Buku extends Controller{
 public function index()
 {
     $data['title'] = 'Data Buku';
-    $data['buku'] = $this->('BukuModel')->getAllkategori();
+    $data['buku'] = $this->model('BukuModel')->getAllBuku();
     $this->view('templates/header', $data);
     $this->view('templates/sidebar', $data);
-    $$this->view('Kategori/index', $data);
+    $this->view('buku/index', $data);
     $this->view('templates/footer'); 
 }
 public function cari(){
@@ -104,5 +104,3 @@ public function simpanBuku(){
             }
         }
     }
-        
-    

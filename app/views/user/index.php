@@ -57,8 +57,8 @@ class="btn float-right btn-xs btn btn-primary">Tambah User</a>
  <td><?= $row['nama'];?></td>
  <td><?= $row['username'];?></td>
  <td>
- <a href="<?= base_url; ?>/user/edit/<?= $row['id'] ?>" class="badge badge-info 
-">Edit</a> <a href="<?= base_url; ?>/user/hapus/<?= $row['id'] ?>" class="badge badgedanger" onclick="return confirm('Hapus data?');">Hapus</a>
+ <a href="<?= base_url; ?>/user/edit/<?= $row['id'] ?>" class="badge badge-info ">Edit</a> <a href="<?= base_url; ?>/user/hapus/<?= $row['id'] ?>" 
+ class="badge badgedanger" onclick="return confirm('Hapus data?');">Hapus</a>
  </td>
  </tr>
  <?php $no++; endforeach; ?>

@@ -1,18 +1,18 @@
 <?php
-class Home extends Controller {
+class Kategori extends Controller {
 public function index()
 {
     $data['title'] = 'Data Kategori';
-    $data['Kategori'] = $this->('KategoriModel')->getAllkategori();
+    $data['Kategori'] = $this->model('KategoriModel')->getAllkategori();
     $this->view('templates/header', $data);
     $this->view('templates/sidebar', $data);
-    $$this->view('Kategori/index', $data);
+    $this->view('Kategori/index', $data);
     $this->view('templates/footer'); 
 }
 public function cari()
 {
-    $data['title'] 'Data Kategori';
-    $data['kategori'] = $this->model('KategoriModel')->cariKategori();
+    $data['title'] = 'Data Kategori';
+    $data['Kategori'] = $this->model('KategoriModel')->cariKategori();
     $data['key'] = $_POST['key'];
     $this->view('templates/header', $data);
     $this->view('templates/sidebar', $data);
@@ -74,10 +74,10 @@ public function hapus($id)
         exit;
     }
     public function __construct(){
-    if($_SESSION['session_login'] != 'sudah_login') {
-    Flasher::setMessage('Login','Tidak ditemukan.','danger');
-    header('location: '. base_url . '/login');
-    exit;
+        if($_SESSION['session_login'] != 'sudah_login'){
+            flasher::setMessage('Login','Tidak ditemukan.','danger');
+            header('location: '. base_url . '/login');
+            exit;
+        }
     }
-    }
-    }
+}

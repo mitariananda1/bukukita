@@ -25,23 +25,19 @@ Flasher::Message();
 </div>
 <!-- /.card-header -->
 <!-- form start -->
-<form role="form" action="<?= base_url; ?>/user/simpanuser" method="POST" 
-enctype="multipart/form-data">
+<form role="form" action="<?= base_url; ?>/user/simpanuser" method="POST" enctype="multipart/form-data">
 <div class="card-body">
 <div class="form-group">
 <label >Nama</label>
-<input type="text" class="form-control" placeholder="masukkan nama..." 
-name="nama">
+<input type="text" class="form-control" placeholder="masukkan nama..." name="nama">
 </div>
 <div class="form-group">
 <label >Username</label>
-<input type="text" class="form-control" placeholder="masukkan username..." 
-name="username">
+<input type="text" class="form-control" placeholder="masukkan username..." name="username">
 </div>
 <div class="form-group">
 <label >Password</label>
-<input type="password" class="form-control" placeholder="masukkan 
-password..." name="password">
+<input type="password" class="form-control" placeholder="masukkan password..." name="password">
 </div>
 <div class="form-group">
 <label >Ulangi Password</label>
